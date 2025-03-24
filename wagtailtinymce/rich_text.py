@@ -30,10 +30,10 @@ import json
 from django.forms import widgets
 from django.utils import translation
 from wagtail.utils.widgets import WidgetWithScript
-from wagtail.wagtailadmin.edit_handlers import RichTextFieldPanel
-from wagtail.wagtailcore.rich_text import DbWhitelister
-from wagtail.wagtailcore.rich_text import expand_db_html, get_link_handler, get_embed_handler
-from wagtail.wagtailcore.whitelist import allow_without_attributes, attribute_rule, check_url
+from wagtail.admin.panels import FieldPanel
+from wagtail.core.rich_text import DbWhitelister
+from wagtail.core.rich_text import expand_db_html, get_link_handler, get_embed_handler
+from wagtail.core.whitelist import allow_without_attributes, attribute_rule, check_url
 
 
 ALLOWED_ATTR = dict.fromkeys(
