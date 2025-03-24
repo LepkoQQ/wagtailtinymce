@@ -31,9 +31,9 @@ from django.forms import widgets
 from django.utils import translation
 from wagtail.utils.widgets import WidgetWithScript
 from wagtail.admin.panels import FieldPanel
-from wagtail.core.rich_text import DbWhitelister
-from wagtail.core.rich_text import expand_db_html, get_link_handler, get_embed_handler
-from wagtail.core.whitelist import allow_without_attributes, attribute_rule, check_url
+from wagtail.rich_text import DbWhitelister
+from wagtail.rich_text import expand_db_html, get_link_handler, get_embed_handler
+from wagtail.whitelist import allow_without_attributes, attribute_rule, check_url
 
 
 ALLOWED_ATTR = dict.fromkeys(
